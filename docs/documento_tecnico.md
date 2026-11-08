@@ -49,12 +49,7 @@ El procedimiento actualiza automáticamente las existencias de los productos ven
 
 ## 7. Secrets, programación y reporte CSV
 
-La contraseña de `sa` se obtiene del Secret **`MSSQL_SA_PASSWORD`** y no se incluye en el repositorio; las variables `ACCEPT_EULA=Y` y `MSSQL_PID=Developer` configuran el contenedor. Los workflows pasan la contraseña a SQL Server y a `sqlcmd` durante la ejecución.
+La contraseña de `sa` se obtiene del Secret **`MSSQL_SA_PASSWORD`** y  las variables `ACCEPT_EULA=Y` y `MSSQL_PID=Developer` configuran el contenedor. Los workflows pasan la contraseña a SQL Server y a `sqlcmd` durante la ejecución.
 
 El segundo workflow contiene `schedule: cron: '17 14 * * 1'` (**lunes, 14:17 UTC**) y `workflow_dispatch` para iniciarlo manualmente. Publica el Artifact **`reporte-ventas-csv`**, que contiene `reporte_ventas.csv` con encabezado y cinco ventas. La [ejecución manual verificada](https://github.com/179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server/actions/runs/42404896834) terminó correctamente. La ejecución futura por calendario está **configurada**, pero no se ha verificado aún su disparo automático.
 
-## 8. Relación con el ejemplo y conclusión
-
-El [ejemplo del docente](https://github.com/jesusrevilla/T41A-P16) utiliza PostgreSQL y GitHub Actions. Se conserva la idea de repositorio documentado y pruebas automatizadas, pero aquí se implementan los requisitos solicitados: **Docker + SQL Server + Secrets + trigger set-based + inventario + CSV como Artifact**. El proyecto demuestra el funcionamiento de la lógica y una integración continua reproducible, no un despliegue productivo persistente.
-
-**Fuentes:** [SQL Server en Docker (Microsoft)](https://learn.microsoft.com/es-es/sql/linux/quickstart-install-connect-docker) · [Parámetros de tipo tabla (Microsoft)](https://learn.microsoft.com/es-es/sql/relational-databases/tables/use-table-valued-parameters-database-engine) · [Eventos de GitHub Actions](https://docs.github.com/es/actions/reference/workflows-and-actions/events-that-trigger-workflows).
