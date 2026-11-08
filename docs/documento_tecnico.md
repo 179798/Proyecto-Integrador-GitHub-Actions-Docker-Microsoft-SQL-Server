@@ -1,8 +1,5 @@
 # Documento técnico: GitHub Actions, Docker y SQL Server
 
-**Proyecto:** Automatización de `EmpresaDB`  
-**Repositorio:** [179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server](https://github.com/179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server)  
-**Revisión técnica:** 7 de noviembre de 2026
 
 ## 1. Objetivo y tecnologías
 
