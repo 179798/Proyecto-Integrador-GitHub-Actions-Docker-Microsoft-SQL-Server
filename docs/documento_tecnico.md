@@ -1,8 +1,5 @@
 # Documento técnico: GitHub Actions, Docker y SQL Server
 
-**Proyecto:** Automatización de `EmpresaDB`  
-**Repositorio:** [179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server](https://github.com/179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server)  
-**Revisión técnica:** 7 de noviembre de 2026
 
 ## 1. Objetivo y tecnologías
 
@@ -60,4 +57,4 @@ El segundo workflow contiene `schedule: cron: '17 14 * * 1'` (**lunes, 14:17 UTC
 
 El [ejemplo del docente](https://github.com/jesusrevilla/T41A-P16) utiliza PostgreSQL y GitHub Actions. Se conserva la idea de repositorio documentado y pruebas automatizadas, pero aquí se implementan los requisitos solicitados: **Docker + SQL Server + Secrets + trigger set-based + inventario + CSV como Artifact**. El proyecto demuestra el funcionamiento de la lógica y una integración continua reproducible, no un despliegue productivo persistente.
 
-**Fuentes:** [SQL Server en Docker (Microsoft)](https://learn.microsoft.com/es-es/sql/linux/quickstart-install-connect-docker) · [Parámetros de tipo tabla (Microsoft)](https://learn.microsoft.com/es-es/sql/relational-databases/tables/use-table-valued-parameters-database-engine) · [Eventos de GitHub Actions](https://docs.github.com/es/actions/reference/workflows-and-actions/events-that-trigger-workflows).
+
