@@ -1,13 +1,13 @@
-# Evidencias que debes capturar en TU cuenta de GitHub
+# Evidencias del proyecto
 
-No se adjuntan capturas falsas. Toma estas capturas cuando ejecutes los workflows:
+Las capturas deben corresponder a ejecuciones reales de GitHub. No mostrar el valor de ninguna contraseña.
 
-1. **Repositorio completo:** pestaña Code con .github/, sql/, scripts/, docs/ y README.md.
-2. **Secret configurado:** Settings > Secrets and variables > Actions. Captura solo el NOMBRE MSSQL_SA_PASSWORD; nunca muestres su valor.
-3. **Workflow 01 en verde:** Actions > 01 - Desplegar y probar SQL Server > ejecución con marca verde.
-4. **Pruebas SQL:** abre la ejecución > desplegar > Probar ventas, trigger, auditoria e inventario; muestra el mensaje 'PRUEBAS CORRECTAS' y los resultados.
-5. **Workflow 02 en verde:** Actions > 02 - Reporte programado de ventas CSV > ejecución.
-6. **Artifact:** parte inferior de la ejecución del workflow 02, sección Artifacts, con 'reporte-ventas-csv'.
-7. **CSV:** captura el archivo 'reporte_ventas.csv' abierto en un editor o Excel/Sheets y sus cinco ventas.
+1. **Repositorio:** pestaña *Code* con `.github`, `sql`, `scripts`, `docs` y `README.md`.
+2. **Secret:** *Settings → Secrets and variables → Actions* mostrando solo el nombre `MSSQL_SA_PASSWORD`.
+3. **Despliegue:** [workflow 01 exitoso](https://github.com/179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server/actions/runs/42404812456).
+4. **Pruebas:** en ese workflow, abrir *desplegar → Probar ventas, trigger, auditoria e inventario* y mostrar `PRUEBAS CORRECTAS` y resultados.
+5. **Reporte:** [workflow 02 exitoso](https://github.com/179798/Proyecto-Integrador-GitHub-Actions-Docker-Microsoft-SQL-Server/actions/runs/42404896834).
+6. **Artifact:** en la ejecución anterior, sección *Artifacts*, mostrar `reporte-ventas-csv`.
+7. **CSV:** abrir `reporte_ventas.csv` descargado y mostrar las cinco ventas.
 
-Guardar las imágenes aquí si deseas incluirlas en el repositorio. Evita nombres, contraseñas o datos privados que no correspondan a la entrega.
+Agregar aquí las imágenes o un documento con títulos y descripciones para que formen parte de la entrega.
